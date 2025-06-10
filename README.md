@@ -3,6 +3,15 @@ Code relevant to the Arp et al. 2025 _Nature Communications_ paper, "Gut Bacteri
 
 HMMs for steroid reductases are available in the ProkFunFind repository: ```https://github.com/nlm-irp-jianglab/ProkFunFind/tree/master/data/Steroid_reductase```
 
+## Read Mapping
+The following tools are required to replicate the read mapping step.
++ bowtie2
++ seqkit
++ pigz
++ samtools
++ trimgalore
++ sratoolkit
+
 Steps to run the read mapping:
 
 1. Clone this repository ```git clone https://github.com/nlm-irp-jianglab/steroid-reductase-bioinfo```
