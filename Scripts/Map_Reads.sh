@@ -4,12 +4,12 @@
 # Bowtie2, seqkit, pigz, samtools, trimgalore, and sratoolkit
 
 SAMPLE=$1 # SRA run ID (e.g., SRR######)
-NAME="5BR.genes.ffn"
+NAME="5-beta_reductase.genes.ffn"
 IND=../Indices # path to bowtie2 index
 THREADS=10 # Number of threads
 OUT=../Output # path to output directory
 TMP=../tmp # Path to temporary directory
-HUMAN=/gpfs/gsfs12/users/Irp-jiang/share/DB_Share/human/chm13v2.0/chm13v2.0 #bowtie human reference path
+HUMAN=/gpfs/gsfs12/users/Irp-jiang/share/DB_Share/human/chm13v2.0/chm13v2.0 #bowtie human reference path, change this to your human reference path
 #BOWTIE2_INDEXES=/data/dufaultthompskm/uroR/08.GTDB-marker-genes/bac120_marker_genes_reps_r214/fna
 
 mkdir -p $OUT
