@@ -16,6 +16,12 @@ The following tools must be installed to replicate the read mapping step (tested
 + trimgalore (v0.6.7)
 + sratoolkit (v3.2.1)
 
+A conda environment file (```environment.yml```) is provided to simplify the installation of all required dependencies. To create and activate the environment, run the following commands (requires Conda):
+
+```conda env create -f environment.yml```
+
+```conda activate 3bR_mapping```
+
 ## Mapping Reads to Steroid Reductase Indices
 
 1. Clone this repository ```git clone https://github.com/nlm-irp-jianglab/steroid-reductase-bioinfo```

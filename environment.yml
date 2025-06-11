@@ -1,0 +1,12 @@
+name: 3bR_mapping
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - conda-forge::pigz
+  - bioconda::sra-tools
+  - bioconda::bowtie
+  - bioconda::seqkit
+  - bioconda::trim-galore
+  - bioconda::samtools
