@@ -5,10 +5,10 @@ HMMs for steroid reductases are available in the ProkFunFind repository: ```http
 
 ## Installation
 ### Operating System
-This read mapping was tested on Rocky Linux 8.7 (Green Obsidian)
+This read mapping code was tested on Rocky Linux 8.7 (Green Obsidian)
 
 ### Installation Requirements
-The following tools must be installed to replicate the read mapping step. (Versions tested on)
+The following tools must be installed to replicate the read mapping step (tested versions shown).
 + bowtie2 (v2.5.3)
 + seqkit (v2.7.0)
 + pigz (v2.8)
@@ -16,13 +16,15 @@ The following tools must be installed to replicate the read mapping step. (Versi
 + trimgalore (v0.6.7)
 + sratoolkit (v3.2.1)
 
-## Steps to map reads to the steroid reductase index
+## Mapping Reads to Steroid Reductase Indices
 
 1. Clone this repository ```git clone https://github.com/nlm-irp-jianglab/steroid-reductase-bioinfo```
 2. Change directory ```cd steroid-reductase-bioinfo/Scripts/```
 3. Make script an executable ```chmod +x Map_Reads.sh```
-4. Modify ```Map_Reads.sh``` to change the human index directory
-5. Run ```./Map_Reads.sh {YOUR SRR NUMBER HERE}``` (e.g. ERR636349). Your output table will be stored in ```steroid-reductase-bioinfo/Output```
+4. Modify ```Map_Reads.sh``` to change the human index directory (chm13v2.0)
+5. Run ```./Map_Reads.sh {YOUR SRR NUMBER HERE}``` (e.g. ERR636349). Your output table will be stored in ```steroid-reductase-bioinfo/Output```. 
+
+Note: The run time will depend on the metagenomics sample. For the sample with accession no. ERR636349, the run time was ~4 hours with 10 threads and 50g RAM.
 
 The script will map the reads of a metagenomics sample (SRR) to our 3 bowtie2 indices: Δ4-3-ketosteroid 5β-reductase, 3β-hydroxysteroid dehydrogenase/Δ5-4 isomerase, and Δ6-3-ketosteroid reductase.
 
@@ -37,7 +39,7 @@ The columns of the output tables are:
 1. Reference sequence name
 2. Reference sequence length (in bp)
 3. Number of reads mapped to this reference
-4. Number of reads *unmapped* but whose mate maps to this reference
+4. Number of reads unmapped but whose mate maps to this reference
 
 ## Reproducibility
-All SRR Accession numbers for the 1549 metagenomic samples used in the read mapping are listed in Supplementary Table 3.
+All SRR Accession numbers for the 1549 metagenomic samples required for reproducing the read mapping analysis in the paper are listed in Supplementary Table 3.
