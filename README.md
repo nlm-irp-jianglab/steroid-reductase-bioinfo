@@ -1,5 +1,5 @@
-# Bioinformatics Analysis for "Gut Bacteria Encode Reductases that Biotransform Steroid Hormones"
-Code relevant to the Arp et al. 2025 _Nature Communications_ paper, "Gut Bacteria Encode Reductases that Biotransform Steroid Hormones."
+# Bioinformatics Analysis for "Identification of gut bacteria reductases that biotransform steroid hormones"
+Code relevant to the Arp et al. 2025 _Nature Communications_ paper, "Identification of gut bacteria reductases that biotransform steroid hormones".
 
 HMMs for steroid reductases are available in the ProkFunFind repository: ```https://github.com/nlm-irp-jianglab/ProkFunFind/tree/master/data/Steroid_reductase```
 
